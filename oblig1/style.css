@@ -13,7 +13,11 @@ body{
   margin:0;
   font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--ink);
-  background:linear-gradient(120deg, #e5edf7 0%, #eef2f7 40%, #e5edf7 100%);
+background: 
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), /* halvtransparent hvit overlay */
+    url("./assets/bakgrunn.jpg") no-repeat center center fixed;
+
+  background-size: cover; /* dekker hele skjermen */
 }
 
 /* Header / Nav */
