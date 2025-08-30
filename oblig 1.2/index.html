@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oblig 1.2 — JS </title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Oblig 1.2 – JavaScript interaktivitet</h1>
+    <p class="muted">
+      Denne siden demonstrerer tre trinn:
+      <strong>1) Add</strong> (legg til i liste),
+      <strong>2) Delete</strong> (fjern fra liste),
+      <strong>3) Search</strong> (filtrer visning mens du skriver).
+    </p>
+
+    <section class="card" id="currencies">
+      <h2>Currencies</h2>
+
+      <!-- 1. Add: bruk form så Enter-tast også fungerer -->
+      <form id="add-form" autocomplete="off" aria-label="Add currency">
+        <input
+          id="currency-input"
+          type="text"
+          placeholder="Currency"
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <!-- 2. Search: live-filtrering -->
+      <div class="search-row">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search"
+          aria-label="Filter currencies"
+        />
+      </div>
+
+      <!-- 3. Listen rendres/oppdateres av JS -->
+      <ul id="currency-list" aria-live="polite" aria-label="Currency list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  padding: 5px;
+  background: #f2f2f2;
+}
+
+/* Liste-elementer ligger typisk som flex: space-between i din CSS */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Delete-knappen: liten, tydelig, tilgjengelig */
+.delete-btn {
+  border: 0;
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 6px;
+  background: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+  filter: brightness(0.9);
+  outline: none;
+}
